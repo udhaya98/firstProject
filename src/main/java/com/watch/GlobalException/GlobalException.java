@@ -17,14 +17,6 @@ public class GlobalException {
 
 
 
-	@ExceptionHandler(BrandException.class)
-	public ResponseEntity<String> handled(BrandException g) {
-		return new ResponseEntity<>(g.getmessage(),HttpStatus.NOT_FOUND);
-	}
-	@ExceptionHandler(AgeException.class)
-	public ResponseEntity<String>handle(AgeException h) {
-		return new ResponseEntity<>(h.getmessage(),HttpStatus.ACCEPTED);
-		
-	}
+	
 		
 	}
